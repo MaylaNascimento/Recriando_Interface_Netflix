@@ -10,14 +10,20 @@
     box-sizing: border-box;
 }
 
+/*Elementos BASE*/
+
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     
 }
 
 header .container{
-   ;
+   display: flex;
+   flex-direction: row;
+   align-items:center ;
+   justify-content: space-between;
   
    
 }
@@ -35,3 +41,19 @@ header nav a{
     margin-right:10px;
 }
 
+/*Cor para o momento que passar o mouse*/
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+                /* cria uma camada em cima da imagem*/
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0,0,0.50)100%), url('../img/fundo.jpg');
+
+    height: 400px;
+    background-size: cover;
+   
+}
